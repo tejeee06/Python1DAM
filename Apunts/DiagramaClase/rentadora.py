@@ -27,11 +27,13 @@ class Rentadora:
             if self.carrega+kg<=8:
                 self.carrega+=kg
                 print(f"La rentadora te {kg} kg")
+            else:
+                print("Hi ha massa roba a la rentadora")
         else:
-            print("No cap la roba o la rentadora esta encessa")
+            print("Larentadora esta encesa")
     
 
-rentadora1 = Rentadora(carrega=0, estat="apagat")
+rentadora1 = Rentadora(carrega=9, estat="apagat")
 rentadora1.encendre()
 rentadora1.apagat()
 rentadora1.treureRoba()

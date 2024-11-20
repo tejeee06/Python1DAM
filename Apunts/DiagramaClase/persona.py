@@ -5,10 +5,15 @@ class Persona:
 
     def parlar(self ):
         print(f"{self.nom} esta parlant.")
+    
+    def DiguesEdat(self):
+        print(f"Tinc {self.edat} anys.")
+    
 
 persona_pepe = Persona(nom= 'Pepe', edat= '18')
 
 persona_pepe.parlar()
+persona_pepe.DiguesEdat()
 
 class Estudiant(Persona):
     def __init__(self, nom, edat, estudi):

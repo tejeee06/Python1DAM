@@ -1,16 +1,18 @@
 class Biblioteca:
     
+    # Metode constructor
     def __init__(self, llibres):
 
         self.llibres = llibres
         
-    
+    # Metode per afegir llibres
     def afegirLlibre(self, id, titol, autor, quantitat):
 
         llibres[id] = {"titol": titol, "autor": autor, "quantitat": quantitat}
         print("LLibre afegit correctament")
         print()
-    
+
+    # Metode per mostrar un llibre en concret 
     def mostrarLlibre(self, id):
         
         if id in self.llibres:
@@ -23,6 +25,7 @@ class Biblioteca:
             print(f"El llibre amb l' id {id} no existeix")
             print()
 
+    # Metode per mostrar tots els llibres disponibles
     def mostrarTotsLlibres(self):
 
         for id, llibre in self.llibres.items(): #.items per poder iterar sobre un diccionari
@@ -32,6 +35,7 @@ class Biblioteca:
             print(f"Quantitat : {llibre['quantitat']}")
             print()
 
+    # Metode per realitzar un prestec d'un llibre
     def prestecLlibre(self, id):
 
         if id in self.llibres:
@@ -48,7 +52,7 @@ class Biblioteca:
             print()
 
 
-
+# Programa principal
 if __name__ == "__main__":
 
     llibres = {

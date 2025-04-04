@@ -1,0 +1,9 @@
+{
+    "nombre": "Hechizero",
+    "nivel": 8,
+    "experiencia": 120,
+    "inventario": [
+        "Arco encantado",
+        "Pocion de curacion"
+    ]
+}

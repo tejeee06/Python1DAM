@@ -18,6 +18,7 @@ class Personatge :
         with open(arxiu, 'w') as f :
             json.dump(dades, f, indent=4)
     
+    #Declarem un metode de classe
     @classmethod
     def charge(cls, arxiu):
         with open(arxiu, 'r') as f:

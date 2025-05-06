@@ -26,8 +26,8 @@ class Producto:
         self.nombre = nombre
         self.precio = precio
     
-    def mostrarProducto(self) :
-        print(f"Producto : {self.nombre} {self.precio}$")
+    def mostrar_producto(self) :
+        return f"Producto : {self.nombre} {self.precio}$"
 
 
 class Pedido:
